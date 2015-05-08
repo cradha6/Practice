@@ -45,9 +45,10 @@ public class TwoStrings {
                 for (int k = 0; k < second.length; k++) {
                     if(first[j] == second[k] ){
                         count++;
+                        if (count > 1)
+                            break;
                     }
-                    if (count > 1)
-                        break;
+
                 }
                 if (count > 1)
                     break;
